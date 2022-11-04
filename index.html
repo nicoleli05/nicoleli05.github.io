@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <form
+  action="https://formspree.io/f/mdojwadd"
+  method="POST">
+
+
+      <div class="input-group">
+        <label>Full Name</label>
+        <input type="text" name="subject" placeholder="Enter your name" id="contact-name" onkeyup="validateName()">
+        <span id="name-error"></span>
+      </div>
+
+      <div class="input-group">
+        <label>Email ID</label>
+        <input type="email" name="email" placeholder="Enter Email" id="contact-email" onkeyup="validateEmail()">
+        <span id="email-error"></span>
+      </div>
+
+      <div class="input-group">
+        <label>Your Message</label>
+        <textarea rows type="text" name="body" placeholder="Enter your message"></textarea>
+      </div>
+
+    <button onclick="return validateForm()">Submit</button>
+    <span id="submit-error"></span>
+
+  </form>
+
+  </div>
+    <script src="script.js"></script>
+</body>
+</html>
